@@ -1,0 +1,491 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>SVG &lt;symbol&gt; sprite preview | svg-sprite</title>
+        <style>
+            body {
+                padding: 0;
+                margin: 0;
+                color: #666;
+                background: #fafafa;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 1em;
+                line-height: 1.4;
+            }
+
+            header {
+                display: block;
+                padding: 3em 3em 2em;
+                background-color: #fff;
+            }
+
+            header p {
+                margin: 2em 0 0;
+            }
+
+            section {
+                border-top: 1px solid #eee;
+                padding: 2em 3em 0;
+            }
+
+            section ul {
+                margin: 0;
+                padding: 0;
+            }
+
+            section li {
+                display: inline-block;
+                background-color: #fff;
+                position: relative;
+                margin: 0 2em 2em 0;
+                vertical-align: top;
+                border: 1px solid #ccc;
+                padding: 1em 1em 3em;
+                cursor: default;
+            }
+
+            .icon-box {
+                margin: 0;
+                width: 144px;
+                height: 144px;
+                position: relative;
+                background: #ccc url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12'%3E%3Cpath fill='%23fff' d='M6 0h6v6H6zM0 6h6v6H0z'/%3E%3C/svg%3E") top left repeat;
+                border: 1px solid #ccc;
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+            }
+
+            .icon {
+                display: inline-block;
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            h2 {
+                margin: 0;
+                padding: 0;
+                font-size: 1em;
+                font-weight: 400;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                position: absolute;
+                left: 1em;
+                right: 1em;
+                bottom: 1em;
+            }
+
+            footer {
+                display: block;
+                margin: 0;
+                padding: 0 3em 3em;
+            }
+
+            footer p {
+                margin: 0;
+                font-size: .7em;
+            }
+
+            footer a {
+                color: #0f7595;
+                margin-left: 0;
+            }
+        </style>
+
+<!--
+Sprite shape dimensions
+====================================================================================================
+You will need to set the sprite shape dimensions via CSS when you use them as inline SVG, otherwise
+they would become a huge 100% in size. You may use the following dimension classes for doing so.
+They might well be outsourced to an external stylesheet of course.
+-->
+
+<style>
+ .svg-arrow-circle-dims { width: 18px; height: 18px; }
+ .svg-cart-dims { width: 22px; height: 22px; }
+ .svg-dumbbell-dims { width: 81px; height: 64px; }
+ .svg-fish-food-dims { width: 62px; height: 81px; }
+ .svg-gym-dims { width: 81px; height: 80px; }
+ .svg-hawaii-dims { width: 74px; height: 81px; }
+ .svg-hourglass-dims { width: 62px; height: 81px; }
+ .svg-insurance-dims { width: 70px; height: 81px; }
+ .svg-logo-dims { width: 196px; height: 57px; }
+ .svg-menu-close-dims { width: 24px; height: 24px; }
+ .svg-molecular-structure-dims { width: 81px; height: 73px; }
+ .svg-night-dims { width: 80px; height: 81px; }
+ .svg-orthopedics-dims { width: 80px; height: 80px; }
+ .svg-slash-dims { width: 15px; height: 45px; }
+ .svg-weight-dims { width: 81px; height: 80px; }
+ .svg-weight-loss-dims { width: 81px; height: 80px; }
+ .svg-yoga-dims { width: 81px; height: 80px; }
+</style>
+
+<!--
+====================================================================================================
+-->
+
+    </head>
+    <body>
+
+<!--
+Inline <symbol> SVG sprite
+====================================================================================================
+This is an inlined version of the generated SVG sprite. The single images may be <use>d everywhere
+below within this document. Please see
+
+    https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode
+
+for further details on how to create this embeddable sprite variant.
+-->
+
+<svg width="0" height="0" style="position:absolute">
+     <symbol viewBox="0 0 21 21" fill="currentColor" id="arrow-circle" xmlns="http://www.w3.org/2000/svg"><path d="M12.411 6.248a1 1 0 1 0-1.536 1.28l1.536-1.28Zm2.546 4.618.769.64a1 1 0 0 0 0-1.28l-.769.64Zm-4.082 3.337a1 1 0 0 0 1.536 1.28l-1.536-1.28ZM7.003 9.866a1 1 0 1 0 0 2v-2Zm3.872-2.337 3.314 3.977 1.537-1.28-3.315-3.978-1.536 1.28Zm3.314 2.697-3.314 3.977 1.536 1.28 3.315-3.977-1.537-1.28Zm.768-.36H7.003v2h7.954v-2Zm1.68-4.657a8 8 0 0 1 0 11.314l1.414 1.414c3.905-3.905 3.905-10.237 0-14.142l-1.414 1.414Zm0 11.314a8 8 0 0 1-11.314 0L3.91 17.937c3.905 3.905 10.237 3.905 14.142 0l-1.414-1.414Zm-11.314 0a8 8 0 0 1 0-11.314L3.91 3.795C.004 7.7.004 14.032 3.909 17.937l1.414-1.414Zm0-11.314a8 8 0 0 1 11.314 0l1.414-1.414C14.146-.11 7.814-.11 3.909 3.795l1.414 1.414Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 22 22" id="cart" xmlns="http://www.w3.org/2000/svg"><path d="M1.38.672a1 1 0 0 0 0 2v-2Zm2.292 1 .966-.262a1 1 0 0 0-.966-.738v1Zm3.726 13.755-.965.261a1 1 0 0 0 1.089.731l-.124-.992Zm11.462-1.433.125.992a1 1 0 0 0 .855-.79l-.98-.202Zm1.72-8.31.98.202a1 1 0 0 0-.98-1.202v1Zm-15.821 0-.965.261.965-.261Zm-3.38-3.012h2.293v-2H1.38v2Zm6.143 13.747 11.463-1.433-.249-1.984-11.462 1.433.248 1.984Zm12.318-2.222 1.72-8.31-1.96-.406-1.719 8.31 1.959.406ZM2.707 1.933l1.087 4.012 1.93-.523L4.638 1.41l-1.93.523Zm1.087 4.012 2.639 9.743 1.93-.523-2.639-9.743-1.93.523ZM20.58 4.684H4.759v2h15.82v-2ZM9.98 19.179a.5.5 0 0 1-.5.5v2a2.5 2.5 0 0 0 2.5-2.5h-2Zm-.5.5a.5.5 0 0 1-.5-.5h-2a2.5 2.5 0 0 0 2.5 2.5v-2Zm-.5-.5a.5.5 0 0 1 .5-.5v-2a2.5 2.5 0 0 0-2.5 2.5h2Zm.5-.5a.5.5 0 0 1 .5.5h2a2.5 2.5 0 0 0-2.5-2.5v2Zm8.5.5a.5.5 0 0 1-.5.5v2a2.5 2.5 0 0 0 2.5-2.5h-2Zm-.5.5a.5.5 0 0 1-.5-.5h-2a2.5 2.5 0 0 0 2.5 2.5v-2Zm-.5-.5a.5.5 0 0 1 .5-.5v-2a2.5 2.5 0 0 0-2.5 2.5h2Zm.5-.5a.5.5 0 0 1 .5.5h2a2.5 2.5 0 0 0-2.5-2.5v2Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 81 64" id="dumbbell" xmlns="http://www.w3.org/2000/svg"><path d="M10.365 2.348C10.365 1.05 9.33 0 8.057 0h-4.77C2.014 0 .98 1.051.98 2.348v31.304C.98 34.95 2.013 36 3.288 36h4.769c1.274 0 2.308-1.051 2.308-2.348V23.478h4.615V12.522h-4.615V2.348ZM78.672 0h-4.769c-1.274 0-2.308 1.051-2.308 2.348v10.174H66.98v10.956h4.615v10.174c0 1.297 1.034 2.348 2.308 2.348h4.77c1.274 0 2.307-1.051 2.307-2.348V2.348C80.98 1.05 79.947 0 78.672 0ZM56.73 6c-2.9 0-5.25 2.317-5.25 5.175C51.48 8.317 49.13 6 46.23 6s-5.25 2.317-5.25 5.175C40.98 8.317 38.63 6 35.73 6s-5.25 2.317-5.25 5.175C30.48 8.317 28.13 6 25.23 6s-5.25 2.317-5.25 5.175v9.663a10.952 10.952 0 0 1 4.667-1.038h15.555c.263 0 .522.016.778.043 3.495.383 6.222 3.311 6.222 6.857v.767c0 .493-.03.98-.087 1.458 2.478-.414 4.365-2.54 4.365-5.1 0 2.858 2.35 5.175 5.25 5.175s5.25-2.317 5.25-5.175v-12.65C61.98 8.317 59.63 6 56.73 6Z"/><path d="M51.373 32.846a10.009 10.009 0 0 1-5.304 1.514l-.08-.001A11.019 11.019 0 0 1 36.05 40.6H32.91v.714c0 1.26-.976 2.344-2.244 2.403a2.35 2.35 0 0 1-2.47-2.337v-3.12a2.349 2.349 0 0 1 2.356-2.34h3.929c4.34 0 7.857-3.492 7.857-7.8v-.78A2.349 2.349 0 0 0 39.98 25H24.266c-3.472 0-6.286 2.794-6.286 6.24v10.14c0 6.19 4.866 11.271 11 11.674v8.606A2.349 2.349 0 0 0 31.337 64h18.857a2.349 2.349 0 0 0 2.357-2.34v-8.815c5.373-1.087 9.429-5.815 9.429-11.465v-8.534a10.01 10.01 0 0 1-5.304 1.514 10.01 10.01 0 0 1-5.303-1.514Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 62 81" id="fish-food" xmlns="http://www.w3.org/2000/svg"><path d="M61.467 32.23H.533c.074-2.29.907-5.299 2.498-7.868l.77-1.243c.636.19 1.31.292 2.005.292h50.388c.695 0 1.368-.102 2.004-.292l.77 1.243c1.566 2.527 2.421 5.519 2.5 7.868ZM23.219 51.583a.578.578 0 0 1 0 .668c-.429.636-1.774 1.716-3.786 2.724v-6.116c2.012 1.008 3.357 2.088 3.786 2.724ZM41.974 51.917c-1.503 1.79-4.113 4.206-6.683 4.206-2.574 0-5.181-2.418-6.685-4.204 1.491-1.764 4.122-4.208 6.685-4.208 2.57 0 5.18 2.417 6.683 4.206Z"/><path d="M.5 36.917v30h61v-30H.5Zm46.369 16.288c-.05.076-1.25 1.889-3.17 3.695-2.76 2.595-5.59 3.91-8.408 3.91-3.58 0-6.765-2.138-9.224-4.718-1.801 1.76-4.844 3.48-8.244 4.602a2.345 2.345 0 0 1-3.078-2.227v-13.1a2.345 2.345 0 0 1 3.078-2.227c3.4 1.122 6.443 2.841 8.244 4.602 2.46-2.581 5.645-4.719 9.224-4.719 2.818 0 5.648 1.316 8.407 3.911 1.92 1.806 3.12 3.619 3.17 3.696a2.343 2.343 0 0 1 0 2.575ZM.5 71.605h61v6.767a2.345 2.345 0 0 1-2.344 2.343H2.844A2.345 2.345 0 0 1 .5 78.372v-6.767ZM58.537 3.06v13.32a2.344 2.344 0 0 1-2.343 2.343H5.806a2.344 2.344 0 0 1-2.344-2.343V3.06A2.344 2.344 0 0 1 5.806.714h50.388a2.344 2.344 0 0 1 2.343 2.344Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 81 80" id="gym" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#ea)"><path d="M78.69 54.124h-2.377V44.84c0-2.674-2.09-4.841-4.667-4.841s-4.666 2.167-4.666 4.84v23.32c0 2.673 2.09 4.84 4.666 4.84 2.578 0 4.667-2.167 4.667-4.84v-9.284h2.376c1.265 0 2.291-1.064 2.291-2.376 0-1.313-1.026-2.376-2.29-2.376ZM39.811 31.32c.46.454 1.065.68 1.67.68.603 0 1.207-.226 1.668-.68l13.727-13.5a10.32 10.32 0 0 0 3.104-7.383c0-2.674-1.034-5.349-3.104-7.383-4.14-4.072-10.877-4.072-15.018 0l-.378.371-.377-.371c-4.141-4.072-10.878-4.072-15.019 0a10.333 10.333 0 0 0 0 14.767l13.727 13.5ZM10.314 40c-2.578 0-4.667 2.167-4.667 4.84v9.283H3.271C2.006 54.123.98 55.188.98 56.5c0 1.313 1.026 2.377 2.29 2.377h2.377v9.282c0 2.674 2.09 4.841 4.667 4.841s4.666-2.167 4.666-4.84V44.84c0-2.673-2.09-4.84-4.666-4.84ZM57.203 32c-2.638 0-4.776 2.152-4.776 4.807V53.64H29.533V36.807c0-2.655-2.139-4.807-4.777-4.807-2.637 0-4.776 2.152-4.776 4.807v38.385c0 2.656 2.138 4.808 4.776 4.808s4.777-2.152 4.777-4.808V58.36h22.894v16.832c0 2.656 2.139 4.808 4.777 4.808 2.638 0 4.776-2.152 4.776-4.808V36.808c0-2.655-2.139-4.808-4.777-4.808Z"/></g><defs><clipPath id="ea"><path transform="translate(.98)" d="M0 0h80v80H0z"/></clipPath></defs></symbol>
+     <symbol fill="currentColor" viewBox="0 0 74 81" id="hawaii" xmlns="http://www.w3.org/2000/svg"><path d="M67.861 41.674a8.228 8.228 0 0 0 3.209-8.165 8.231 8.231 0 0 0 2.044-8.53 8.227 8.227 0 0 0-6.77-5.578c-1.06-2.14-3.106-3.613-5.37-4.239C55.481 6.518 46.442 1.025 36.544.727 19.097.245 5.14 14.312 5.14 31.34v35.587C2.25 69.886.452 73.919.452 78.372a2.342 2.342 0 0 0 2.343 2.344h65.627a2.342 2.342 0 0 0 2.344-2.344c0-4.453-1.797-8.487-4.688-11.446V42.64c.617-.257 1.225-.553 1.783-.967ZM30.603 28.85c2.018-1.838 3.696-4.092 4.937-6.548 2.185 4.688 5.869 8.769 10.635 10.407.266.346.495.717.818 1.021-.46 2.706.52 5.418 2.54 7.322-1.365 6.617-7.114 11.38-13.925 11.38a14.214 14.214 0 0 1-14.062-11.91l-1.156-6.931c3.648-.358 7.191-1.99 10.213-4.74ZM5.375 76.028c.934-4.583 4.558-8.181 9.14-9.119v9.119h-9.14Zm46.64 0H19.202v-9.375h4.688c3.877 0 7.031-3.31 7.031-7.188v-2.997c1.51.384 3.064.653 4.688.653 1.624 0 3.177-.269 4.688-.653v2.997c0 3.877 3.154 7.188 7.03 7.188h4.689v9.375Zm4.688 0v-9.119c4.582.938 8.205 4.537 9.14 9.119h-9.14Zm8.366-38.122a3.571 3.571 0 0 1-4.46-.153 2.34 2.34 0 0 0-3.075.03 3.575 3.575 0 0 1-4.457.235 3.571 3.571 0 0 1-1.234-4.291 2.344 2.344 0 0 0-.977-2.916 3.567 3.567 0 0 1-1.6-4.166 3.565 3.565 0 0 1 3.7-2.495c1.132.069 2.22-.689 2.471-1.831a3.568 3.568 0 0 1 3.465-2.81c1.45-.019 3.127 1.112 3.518 2.746a2.331 2.331 0 0 0 2.507 1.783c1.648-.174 3.209.835 3.742 2.428a3.57 3.57 0 0 1-1.524 4.196 2.343 2.343 0 0 0-.925 2.934 3.566 3.566 0 0 1-1.151 4.31Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 62 81" id="hourglass" xmlns="http://www.w3.org/2000/svg"><path d="m56.213 66.908-4.48-13.434c-1.867-5.608-5.868-10.09-11.035-12.643 5.183-2.58 9.192-7.336 11.034-12.872l4.481-13.436c3.015-.792 5.256-3.204 5.256-6.464 0-3.877-3.154-7.344-7.032-7.344H7.563A7.039 7.039 0 0 0 .53 7.747c0 3.26 2.241 5.984 5.256 6.776l4.48 13.436c1.851 5.554 5.864 10.287 11.046 12.866-5.172 2.551-9.173 7.031-11.045 12.647L5.787 66.908C2.772 67.7.53 70.424.53 73.684a7.04 7.04 0 0 0 7.032 7.032h46.874a7.04 7.04 0 0 0 7.032-7.032c0-3.26-2.241-5.984-5.256-6.776ZM13.942 24.153l-3.13-9.375h40.375l-3.128 9.375H13.942Zm29.176 42.5C41.222 60.973 36.988 52.59 31 52.59c-5.976 0-10.22 8.364-12.118 14.063h-8.07l3.905-11.698c1.734-5.216 5.842-9.127 11.018-10.804l3.745 3.191c.884.75 2.159.74 3.026.014l3.809-3.19c5.153 1.688 9.242 5.592 10.968 10.789l3.904 11.698h-8.069Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 70 81" id="insurance" xmlns="http://www.w3.org/2000/svg"><path d="M42.239 26.823c-2.109 0-4.09.821-5.582 2.312-.915.915-2.399.915-3.314 0a7.869 7.869 0 0 0-5.582-2.308c-2.021 0-4.042.77-5.581 2.308a7.842 7.842 0 0 0-2.312 5.581c0 2.108.821 4.09 2.312 5.581L35 53.117l12.82-12.82a7.842 7.842 0 0 0 2.312-5.58c0-2.109-.821-4.091-2.312-5.582a7.842 7.842 0 0 0-5.581-2.312Z"/><path d="M68.018 11.595 35.74.835a2.344 2.344 0 0 0-1.482 0L1.982 11.596A2.344 2.344 0 0 0 .38 13.818V33.59a49.484 49.484 0 0 0 33.88 47.005 2.343 2.343 0 0 0 1.482 0 49.484 49.484 0 0 0 33.88-47.005V13.818a2.344 2.344 0 0 0-1.603-2.223ZM51.134 43.612 36.657 58.09a2.336 2.336 0 0 1-1.657.687c-.6 0-1.2-.23-1.657-.687L18.866 43.612a12.498 12.498 0 0 1-3.685-8.896c0-3.36 1.309-6.52 3.685-8.896 4.384-4.384 11.227-4.849 16.133-1.396a12.49 12.49 0 0 1 7.24-2.288c3.36 0 6.52 1.308 8.896 3.684a12.498 12.498 0 0 1 3.684 8.896c0 3.36-1.309 6.52-3.685 8.896Z"/></symbol>
+     <symbol fill="none" viewBox="0 0 196 57" id="logo" xmlns="http://www.w3.org/2000/svg"><path fill="url(#ia)" d="M.98.5h194.503v56.358H.98z"/><defs><pattern id="ia" patternContentUnits="objectBoundingBox" width="1" height="1"><use xlink:href="#ib" transform="scale(.00353 .0122)"/></pattern><image id="ib" width="283" height="82" preserveAspectRatio="none" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="data:image/png;base64,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"/></defs></symbol>
+     <symbol fill="currentColor" viewBox="0 0 24 24" id="menu-close" xmlns="http://www.w3.org/2000/svg"><path d="M20.98 16.679h-16m16-8h-16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 81 73" id="molecular-structure" xmlns="http://www.w3.org/2000/svg"><path d="m70.354 12.174 9.44 5.362a2.335 2.335 0 0 1 1.186 2.022V31.63c0 .832-.455 1.606-1.187 2.022l-10.626 6.036a2.414 2.414 0 0 1-2.374 0l-10.626-6.036a2.335 2.335 0 0 1-1.187-2.022V19.558c0-.831.455-1.606 1.187-2.022l9.44-5.362V2.335C65.606 1.045 66.668 0 67.98 0c1.31 0 2.374 1.046 2.374 2.335v9.84ZM61.192 61.796l-7.03 4.042c-.731.42-1.64.42-2.372 0L41.167 59.73a2.368 2.368 0 0 1-1.187-2.046V45.469c0-.841.455-1.626 1.187-2.046l10.623-6.108a2.389 2.389 0 0 1 2.373 0l10.623 6.108a2.368 2.368 0 0 1 1.186 2.046v8.873h9.635a2.368 2.368 0 0 1 2.373 2.363 2.368 2.368 0 0 1-2.373 2.363h-9.668v11.569A2.368 2.368 0 0 1 63.565 73a2.368 2.368 0 0 1-2.373-2.363v-8.84ZM2.137 60.665l7.516-4.383V45.558c0-.831.444-1.606 1.157-2.022l9.194-5.362v-9.839c0-1.29 1.036-2.335 2.313-2.335 1.277 0 2.312 1.046 2.312 2.335v9.84l9.195 5.36a2.347 2.347 0 0 1 1.156 2.023V57.63c0 .832-.443 1.607-1.156 2.022l-10.351 6.036a2.3 2.3 0 0 1-2.313 0l-9.194-5.361-7.517 4.383a2.283 2.283 0 0 1-1.154.313c-.8 0-1.577-.419-2.005-1.168a2.348 2.348 0 0 1 .847-3.19Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 80 81" id="night" xmlns="http://www.w3.org/2000/svg"><path d="M49.375 38.06H40a2.344 2.344 0 0 1-1.657-4.002l5.374-5.374H40a2.344 2.344 0 0 1 0-4.687h9.375a2.344 2.344 0 0 1 1.657 4l-5.374 5.375h3.717a2.344 2.344 0 0 1 0 4.687ZM68.125 19.31H58.75a2.344 2.344 0 0 1-1.657-4.002l5.374-5.374H58.75a2.344 2.344 0 0 1 0-4.687h9.375a2.344 2.344 0 0 1 1.657 4l-5.374 5.375h3.717a2.344 2.344 0 0 1 0 4.687Z"/><path d="M40 80.716c-22.056 0-40-17.98-40-40.08 0-10.205 3.839-19.91 10.81-27.327C18.01 5.646 27.974 1.174 38.865.718c.947-.04 1.82.491 2.22 1.347.455.968.266 2.243-.984 3.053-2.736 1.773-11.664 8.56-11.664 21.455 0 14.13 11.495 25.625 25.625 25.625 12.49 0 19.195-8.123 21.498-11.615 1.127-1.711 2.63-1.25 3.09-1.034a2.343 2.343 0 0 1 1.347 2.22c-.456 10.88-4.937 20.854-12.616 28.082A39.808 39.808 0 0 1 40 80.716Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 80 80" id="orthopedics" xmlns="http://www.w3.org/2000/svg"><path d="M47.11.375v13.504c0 2.316 1.528 4.438 4.083 5.676 3.213 1.56 5.291 4.871 5.291 8.442 0 8.724-10.922 12.683-16.539 6.047-4.425 6.134-16.956 3.167-16.25-6.74.242-3.347 2.453-6.432 5.63-7.86 2.225-1 3.722-3.635 3.722-6.556V.375C14.426 3.71.078 20.148.078 39.715c0 19.568 14.348 36.006 32.969 39.341V66.543c0-2.92-1.497-5.555-3.722-6.556-3.177-1.428-5.387-4.513-5.63-7.86-.67-9.42 11.09-13.147 16.516-6.74 4.64-6.438 16.273-3.055 16.273 6.047 0 3.57-2.078 6.883-5.291 8.441-2.555 1.239-4.084 3.36-4.084 5.677v13.504c18.622-3.335 32.813-19.773 32.813-39.34C79.922 20.147 65.73 3.71 47.109.374Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 15 45" id="slash" xmlns="http://www.w3.org/2000/svg"><path d="M8.478.14h5.729L5.982 44.86H.254L8.478.14Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 81 80" id="weight" xmlns="http://www.w3.org/2000/svg"><path d="M48.48 21c1.378 0 2.5-1.122 2.5-2.5s-1.121-2.5-2.5-2.5a2.503 2.503 0 0 0-2.5 2.5c0 1.378 1.121 2.5 2.5 2.5Z"/><path d="M48.98 37c10.477 0 19-8.3 19-18.5S59.456 0 48.98 0c-10.477 0-19 8.3-19 18.5s8.523 18.5 19 18.5Zm0-25.438c3.929 0 7.125 3.113 7.125 6.938 0 3.825-3.196 6.938-7.125 6.938s-7.125-3.113-7.125-6.938c0-3.825 3.196-6.938 7.125-6.938Z"/><path d="M79.982 40.992a2.36 2.36 0 0 0-2.144-.284l-9.65 3.463c-3.154-2.206-7.094-3.408-11.243-3.408-5.72 0-11.05 2.342-14.333 6.205-2.537-1.592-5.56-2.158-8.61-1.557a12.305 12.305 0 0 0-5.49 2.597c.158-.136-.11-1.241-.118-1.466-.04-1.216.132-2.431.434-3.608.645-2.508 1.898-4.871 3.258-7.063-4.212-4.053-6.9-9.655-7.121-15.871a49.302 49.302 0 0 0-4.014 3.087 52.29 52.29 0 0 0-8.02 8.61 60.775 60.775 0 0 0-4.32 6.695c-6.003 10.813-7.559 21.062-7.63 23.8-.004.15.007.3.032.45.847 4.95 4.521 9.44 10.345 12.642C16.888 78.325 23.993 80 31.366 80c7.166 0 13.992-1.556 19.435-4.407l4.125 3.649a2.343 2.343 0 0 0 1.728.758h21.981a2.336 2.336 0 0 0 2.345-2.327V42.897c0-.759-.373-1.47-.998-1.905Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 81 80" id="weight-loss" xmlns="http://www.w3.org/2000/svg"><path d="M16.107 19.725a2.332 2.332 0 0 0 2.265 1.267 2.343 2.343 0 0 0 2.034-1.618c2.85-8.76 10.89-14.647 20.006-14.647s17.156 5.886 20.006 14.647A2.342 2.342 0 0 0 62.64 21c.242 0 .488-.038.73-.119a2.37 2.37 0 0 0 1.492-2.984 25.924 25.924 0 0 0-9.217-12.84C51.201 1.75 45.934 0 40.412 0s-10.79 1.749-15.234 5.058a25.929 25.929 0 0 0-7.158 8.131l-.624-1.215a2.327 2.327 0 0 0-3.154-1.009 2.376 2.376 0 0 0-.998 3.188l2.863 5.572Z"/><path d="M26.98 26c0 7.72 6.28 14 14 14s14-6.28 14-14-6.28-14-14-14-14 6.28-14 14Zm15.65 1.65a2.326 2.326 0 0 1-1.65.683 2.326 2.326 0 0 1-1.65-.683l-3.287-3.288a2.334 2.334 0 0 1 3.3-3.3l3.287 3.288a2.333 2.333 0 0 1 0 3.3Z"/><path d="M71.339 27.848 59.045 24c.033.456.05.917.05 1.382 0 10.415-8.35 18.888-18.615 18.888-10.265 0-18.616-8.473-18.616-18.888 0-.465.018-.926.05-1.382L9.621 27.848a2.36 2.36 0 0 0-1.63 2.49l4.655 47.534C12.764 79.08 13.765 80 14.96 80h51.037c1.196 0 2.198-.92 2.316-2.128l4.655-47.534a2.36 2.36 0 0 0-1.63-2.49Zm-28.855 41.92c0 1.304-1.042 2.361-2.327 2.361s-2.327-1.057-2.327-2.36v-14.48c0-1.303 1.042-2.36 2.327-2.36s2.327 1.057 2.327 2.36v14.48Z"/></symbol>
+     <symbol fill="currentColor" viewBox="0 0 81 80" id="yoga" xmlns="http://www.w3.org/2000/svg"><path d="M60.72 80H37.297c-2.937 0-5.317-2.305-5.317-5.148 0-2.353 1.647-4.407 4.001-4.989l22.696-5.61c5.223-1.292 10.303 2.53 10.303 7.75 0 4.416-3.698 7.997-8.26 7.997ZM31.98 66.31l-8.043-2.057c-5.048-1.292-9.957 2.53-9.957 7.75 0 4.416 3.574 7.997 7.982 7.997h6.429a9.674 9.674 0 0 1-1.478-5.148 9.72 9.72 0 0 1 5.067-8.542ZM29.574 35.59l-5.577-11.563a2.386 2.386 0 0 1 .802-3.009l14.181-9.606V0L18.539 13.847a10.41 10.41 0 0 0-4.559 8.638c0 1.57.36 3.146 1.04 4.557L23.2 44a19.831 19.831 0 0 1 6.374-8.41ZM67.98 22.485a10.41 10.41 0 0 0-4.559-8.638L42.98 0v11.412l14.18 9.606a2.386 2.386 0 0 1 .803 3.009L52.386 35.59A19.833 19.833 0 0 1 58.76 44l8.178-16.958a10.553 10.553 0 0 0 1.041-4.557ZM55.98 60.142v-8.983c0-4.98-2.404-9.404-6.103-12.159a13.307 13.307 0 0 1-17.794 0 15.137 15.137 0 0 0-6.103 12.16v8.982l15 3.858 15-3.858Z"/><path d="M40.48 37c-4.687 0-8.5-3.813-8.5-8.5 0-4.687 3.813-8.5 8.5-8.5 4.687 0 8.5 3.813 8.5 8.5 0 4.687-3.813 8.5-8.5 8.5Z"/></symbol>
+</svg>
+
+<!--
+====================================================================================================
+-->
+
+        <header>
+            <h1>SVG <code>&lt;symbol&gt;</code> sprite preview</h1>
+            <p>This preview features two methods of using the generated sprite in conjunction with inline SVG. Please have a look at the HTML source for further details and be aware of the following constraints:</p>
+            <ul>
+                <li>Your browser has to <a href="https://caniuse.com/svg-html5" target="_blank" rel="noopener noreferrer">support inline SVG</a> for these techniques to work.</li>
+                <li>The embedded sprite (A) slightly differs from the generated external one. Please <a href="https://github.com/svg-sprite/svg-sprite/blob/main/docs/configuration.md#defs--symbol-mode" target="_blank" rel="noopener noreferrer">see the documentation</a> for details on how to create such an embeddable sprite.</li>
+            </ul>
+        </header>
+        <section>
+
+<!--
+A) Inline SVG with embedded sprite
+====================================================================================================
+These SVG images make use of fragment identifiers (IDs) and are extracted out of the inline sprite
+embedded above. They may be styled via CSS.
+-->
+
+            <h3>A) Inline SVG with embedded sprite</h3>
+            <ul>
+
+             <li title="arrow-circle">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-circle-dims">
+                            <use xlink:href="#arrow-circle"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-circle, </h2>
+                </li>
+             <li title="cart">
+                    <div class="icon-box">
+                        <svg class="svg-cart-dims">
+                            <use xlink:href="#cart"></use>
+                        </svg>
+                    </div>
+                    <h2>cart, </h2>
+                </li>
+             <li title="dumbbell">
+                    <div class="icon-box">
+                        <svg class="svg-dumbbell-dims">
+                            <use xlink:href="#dumbbell"></use>
+                        </svg>
+                    </div>
+                    <h2>dumbbell, </h2>
+                </li>
+             <li title="fish-food">
+                    <div class="icon-box">
+                        <svg class="svg-fish-food-dims">
+                            <use xlink:href="#fish-food"></use>
+                        </svg>
+                    </div>
+                    <h2>fish-food, </h2>
+                </li>
+             <li title="gym">
+                    <div class="icon-box">
+                        <svg class="svg-gym-dims">
+                            <use xlink:href="#gym"></use>
+                        </svg>
+                    </div>
+                    <h2>gym, </h2>
+                </li>
+             <li title="hawaii">
+                    <div class="icon-box">
+                        <svg class="svg-hawaii-dims">
+                            <use xlink:href="#hawaii"></use>
+                        </svg>
+                    </div>
+                    <h2>hawaii, </h2>
+                </li>
+             <li title="hourglass">
+                    <div class="icon-box">
+                        <svg class="svg-hourglass-dims">
+                            <use xlink:href="#hourglass"></use>
+                        </svg>
+                    </div>
+                    <h2>hourglass, </h2>
+                </li>
+             <li title="insurance">
+                    <div class="icon-box">
+                        <svg class="svg-insurance-dims">
+                            <use xlink:href="#insurance"></use>
+                        </svg>
+                    </div>
+                    <h2>insurance, </h2>
+                </li>
+             <li title="logo">
+                    <div class="icon-box">
+                        <svg class="svg-logo-dims">
+                            <use xlink:href="#logo"></use>
+                        </svg>
+                    </div>
+                    <h2>logo, </h2>
+                </li>
+             <li title="menu-close">
+                    <div class="icon-box">
+                        <svg class="svg-menu-close-dims">
+                            <use xlink:href="#menu-close"></use>
+                        </svg>
+                    </div>
+                    <h2>menu-close, </h2>
+                </li>
+             <li title="molecular-structure">
+                    <div class="icon-box">
+                        <svg class="svg-molecular-structure-dims">
+                            <use xlink:href="#molecular-structure"></use>
+                        </svg>
+                    </div>
+                    <h2>molecular-structure, </h2>
+                </li>
+             <li title="night">
+                    <div class="icon-box">
+                        <svg class="svg-night-dims">
+                            <use xlink:href="#night"></use>
+                        </svg>
+                    </div>
+                    <h2>night, </h2>
+                </li>
+             <li title="orthopedics">
+                    <div class="icon-box">
+                        <svg class="svg-orthopedics-dims">
+                            <use xlink:href="#orthopedics"></use>
+                        </svg>
+                    </div>
+                    <h2>orthopedics, </h2>
+                </li>
+             <li title="slash">
+                    <div class="icon-box">
+                        <svg class="svg-slash-dims">
+                            <use xlink:href="#slash"></use>
+                        </svg>
+                    </div>
+                    <h2>slash, </h2>
+                </li>
+             <li title="weight">
+                    <div class="icon-box">
+                        <svg class="svg-weight-dims">
+                            <use xlink:href="#weight"></use>
+                        </svg>
+                    </div>
+                    <h2>weight, </h2>
+                </li>
+             <li title="weight-loss">
+                    <div class="icon-box">
+                        <svg class="svg-weight-loss-dims">
+                            <use xlink:href="#weight-loss"></use>
+                        </svg>
+                    </div>
+                    <h2>weight-loss, </h2>
+                </li>
+             <li title="yoga">
+                    <div class="icon-box">
+                        <svg class="svg-yoga-dims">
+                            <use xlink:href="#yoga"></use>
+                        </svg>
+                    </div>
+                    <h2>yoga, </h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <section>
+
+<!--
+B) Inline SVG with external sprite
+====================================================================================================
+These SVG images make use of an URL + fragment identifiers (IDs) and refer to the regular external
+SVG sprite. They may be styled via CSS.
+-->
+
+            <h3>B) Inline SVG with external sprite</h3>
+            <ul>
+
+             <li title="arrow-circle">
+                    <div class="icon-box">
+                        <svg class="svg-arrow-circle-dims">
+                            <use xlink:href="sprite.svg#arrow-circle"></use>
+                        </svg>
+                    </div>
+                    <h2>arrow-circle</h2>
+                </li>
+             <li title="cart">
+                    <div class="icon-box">
+                        <svg class="svg-cart-dims">
+                            <use xlink:href="sprite.svg#cart"></use>
+                        </svg>
+                    </div>
+                    <h2>cart</h2>
+                </li>
+             <li title="dumbbell">
+                    <div class="icon-box">
+                        <svg class="svg-dumbbell-dims">
+                            <use xlink:href="sprite.svg#dumbbell"></use>
+                        </svg>
+                    </div>
+                    <h2>dumbbell</h2>
+                </li>
+             <li title="fish-food">
+                    <div class="icon-box">
+                        <svg class="svg-fish-food-dims">
+                            <use xlink:href="sprite.svg#fish-food"></use>
+                        </svg>
+                    </div>
+                    <h2>fish-food</h2>
+                </li>
+             <li title="gym">
+                    <div class="icon-box">
+                        <svg class="svg-gym-dims">
+                            <use xlink:href="sprite.svg#gym"></use>
+                        </svg>
+                    </div>
+                    <h2>gym</h2>
+                </li>
+             <li title="hawaii">
+                    <div class="icon-box">
+                        <svg class="svg-hawaii-dims">
+                            <use xlink:href="sprite.svg#hawaii"></use>
+                        </svg>
+                    </div>
+                    <h2>hawaii</h2>
+                </li>
+             <li title="hourglass">
+                    <div class="icon-box">
+                        <svg class="svg-hourglass-dims">
+                            <use xlink:href="sprite.svg#hourglass"></use>
+                        </svg>
+                    </div>
+                    <h2>hourglass</h2>
+                </li>
+             <li title="insurance">
+                    <div class="icon-box">
+                        <svg class="svg-insurance-dims">
+                            <use xlink:href="sprite.svg#insurance"></use>
+                        </svg>
+                    </div>
+                    <h2>insurance</h2>
+                </li>
+             <li title="logo">
+                    <div class="icon-box">
+                        <svg class="svg-logo-dims">
+                            <use xlink:href="sprite.svg#logo"></use>
+                        </svg>
+                    </div>
+                    <h2>logo</h2>
+                </li>
+             <li title="menu-close">
+                    <div class="icon-box">
+                        <svg class="svg-menu-close-dims">
+                            <use xlink:href="sprite.svg#menu-close"></use>
+                        </svg>
+                    </div>
+                    <h2>menu-close</h2>
+                </li>
+             <li title="molecular-structure">
+                    <div class="icon-box">
+                        <svg class="svg-molecular-structure-dims">
+                            <use xlink:href="sprite.svg#molecular-structure"></use>
+                        </svg>
+                    </div>
+                    <h2>molecular-structure</h2>
+                </li>
+             <li title="night">
+                    <div class="icon-box">
+                        <svg class="svg-night-dims">
+                            <use xlink:href="sprite.svg#night"></use>
+                        </svg>
+                    </div>
+                    <h2>night</h2>
+                </li>
+             <li title="orthopedics">
+                    <div class="icon-box">
+                        <svg class="svg-orthopedics-dims">
+                            <use xlink:href="sprite.svg#orthopedics"></use>
+                        </svg>
+                    </div>
+                    <h2>orthopedics</h2>
+                </li>
+             <li title="slash">
+                    <div class="icon-box">
+                        <svg class="svg-slash-dims">
+                            <use xlink:href="sprite.svg#slash"></use>
+                        </svg>
+                    </div>
+                    <h2>slash</h2>
+                </li>
+             <li title="weight">
+                    <div class="icon-box">
+                        <svg class="svg-weight-dims">
+                            <use xlink:href="sprite.svg#weight"></use>
+                        </svg>
+                    </div>
+                    <h2>weight</h2>
+                </li>
+             <li title="weight-loss">
+                    <div class="icon-box">
+                        <svg class="svg-weight-loss-dims">
+                            <use xlink:href="sprite.svg#weight-loss"></use>
+                        </svg>
+                    </div>
+                    <h2>weight-loss</h2>
+                </li>
+             <li title="yoga">
+                    <div class="icon-box">
+                        <svg class="svg-yoga-dims">
+                            <use xlink:href="sprite.svg#yoga"></use>
+                        </svg>
+                    </div>
+                    <h2>yoga</h2>
+                </li>
+         </ul>
+
+<!--
+====================================================================================================
+-->
+
+        </section>
+        <footer>
+            <p>Generated at Sun, 15 Jun 2025 15:42:28 GMT by <a href="https://github.com/svg-sprite/svg-sprite" target="_blank" rel="noopener noreferrer">svg-sprite</a>.</p>
+        </footer>
+    </body>
+</html>

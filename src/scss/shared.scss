@@ -1,0 +1,29 @@
+$blue: #2873B9;
+$blue-hover:#034685;
+$dark-gray: #9F9F9F;
+$gray: #DCDBDB;
+$red: #D62137;
+$black: #2B2B2A;
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('./../assets/fonts/UniSans') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+html, body {
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+
+}
+
+/** Секция важного медиа запроса */
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1800px;
+  }
+}
+
+/** конец секции важного медиа запроса  */

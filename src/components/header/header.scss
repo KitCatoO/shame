@@ -1,0 +1,104 @@
+@import "../../scss/shared";
+
+header {
+  height: 88px;
+
+  .container-fluid {
+    align-items: end !important;
+  }
+
+  nav.navbar {
+    z-index: 1;
+
+    align-items: end;
+
+    height: 100%;
+  }
+}
+
+.item-icon {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  height: 100%;
+
+  margin-right: 1rem;
+
+  .navbar-nav {
+    gap: 10px;
+    li a{
+      color: #ffffff;
+    }
+  }
+}
+
+.navbar-toggler {
+  padding: initial;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 100%;
+  color: #ffffff;
+  background-color: transparent;
+  border: initial;
+  border-radius: initial;
+  transition: initial;
+
+  &:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: initial;
+  }
+}
+
+li.item-icon {
+  display: flex;
+  align-items: center;
+
+  svg {
+    margin-right: .5rem;
+  }
+}
+
+.navbar-brand {
+  position: relative;
+
+  top: 1rem;
+  right: 1.5rem;
+}
+
+.card-icon-container {
+  color: white;
+  font-weight: 500;
+}
+
+.offcanvas-backdrop.show {
+  opacity: 0;
+}
+
+.offcanvas.offcanvas-end {
+  width: 719px;
+  background-color: $blue;
+
+  padding-left: 7.3%;
+  padding-top: 80px;
+
+  z-index: 0;
+}
+
+.offcanvas-body {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-toggler {
+    display: flex;
+    align-items: center;
+  }
+}
