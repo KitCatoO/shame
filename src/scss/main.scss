@@ -1,0 +1,12 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "shared";
+
+@import "../components/header/header";
+@import "../components/fag/fag";
+@import "../components/footer/footer";
+
+@import "../pages/index/index";
+@import "../pages/catalog/catalog";
+@import "../pages/about/about";
+

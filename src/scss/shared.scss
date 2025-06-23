@@ -1,0 +1,304 @@
+$blue: #2873B9;
+$blue-hover:#034685;
+$dark-gray: #9F9F9F;
+$gray: #DCDBDB;
+$red: #D62137;
+$red-hover: #991A1C;
+$black: #2B2B2A;
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Thin.otf');
+  src: local('Uni Sans-Trial Thin');
+  src: local('Uni Sans-Trial-Thin');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Thin.otf') format('opentype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-ThinItalic.otf');
+  src: local('Uni Sans-Trial ThinItalic');
+  src: local('Uni Sans-Trial-ThinItalic');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-ThinItalic.otf') format('opentype');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Light.otf');
+  src: local('Uni Sans-Trial Light');
+  src: local('Uni Sans-Trial-Light');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-LightItalic.otf');
+  src: local('Uni Sans-Trial LightItalic');
+  src: local('Uni Sans-Trial-LightItalic');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-LightItalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Book.otf');
+  src: local('Uni Sans-Trial');
+  src: local('Uni Sans-Trial');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Book.otf') format('opentype');
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Book.otf');
+  src: local('Uni Sans-Trial Italic');
+  src: local('Uni Sans-Trial-Italic');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Book.otf') format('opentype');
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Regular.otf');
+  src: local('Uni Sans-Trial Regular');
+  src: local('Uni Sans-Trial-Regular');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-RegularItalic.otf');
+  src: local('Uni Sans-Trial RegularItalic');
+  src: local('Uni Sans-Trial-RegularItalic');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-RegularItalic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-SemiBold.otf');
+  src: local('Uni Sans-Trial SemiBold');
+  src: local('Uni Sans-Trial-SemiBold');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-SemiBold.otf');
+  src: local('Uni Sans-Trial SemiBold');
+  src: local('Uni Sans-Trial-SemiBold');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Bold.otf');
+  src: local('Uni Sans-Trial Bold');
+  src: local('Uni Sans-Trial-Bold');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Bold.otf');
+  src: local('Uni Sans-Trial Bold');
+  src: local('Uni Sans-Trial-Bold');
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-Heavy.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Uni Sans-Trial';
+  src: url('../assets/fonts/Uni Sans/UniSans-Trial-HeavyItalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Thin.ttf') format('truetype');
+  font-weight: 250;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-ThinItalic.ttf') format('truetype');
+  font-weight: 250;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraLight.ttf') format('truetype');
+  font-weight: 275;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 275;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Light.ttf') format('truetype');
+  font-weight: 275;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../assets/fonts/Montserrat/Montserrat-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+html, body {
+  height: 100%;
+  font-family: Montserrat, sans-serif;
+
+}
+
+h1 {
+  font-weight: 900;
+  font-style: italic;
+  font-size: 82px;
+  text-transform: uppercase;
+  font-family: Uni Sans-Trial, sans-serif;
+}
+
+/** Секция важного медиа запроса */
+@media (min-width: 1400px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    max-width: 1800px;
+  }
+}
+
+/** конец секции важного медиа запроса  */

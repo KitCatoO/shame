@@ -1,0 +1,58 @@
+footer {
+  height: 114px;
+
+  font-size: 14px;
+  font-weight: 500;
+  font-family: Montserrat, sans-serif;
+  line-height: 100%;
+
+  .container,
+  .row {
+    height: inherit;
+  }
+
+  .row {
+    align-items: center;
+  }
+
+  .footer-content {
+    padding-left: 0;
+    padding-right: 0;
+
+    margin-bottom: 1rem;
+
+    height: 56.38px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .label-info {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  .contact-info {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    .mail {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  .footer-text {
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

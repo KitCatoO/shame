@@ -1,0 +1,250 @@
+@import "../../scss/shared";
+
+$accordion-button-icon: url("../../assets/images/icons/circle-plus.svg");
+$accordion-button-active-icon: url("../../assets/images/icons/minus.svg");
+
+$accordion-button-active-bg: transparent;
+$bs-accordion-border-color: $dark-gray;
+
+
+.accordion {
+  font-family: Montserrat, sans-serif;
+  line-height: normal;
+
+  .accordion-item {
+    border-color: $bs-accordion-border-color;
+
+    &*:has(.accordion-button:not(.collapsed)){
+      border-color: $blue-hover;
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $dark-gray;
+    }
+  }
+
+  .accordion-body {
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  .accordion-button {
+    font-weight: 600;
+    font-size: 18px;
+
+    &:after {
+      width: 50px;
+      height: 50px;
+
+      background-size: auto;
+      background-position: center;
+      background-image: $accordion-button-icon;
+    }
+
+    &:focus {
+      box-shadow: none;
+    }
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: $accordion-button-active-icon;
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: $accordion-button-active-bg;
+    box-shadow: none;
+
+    color: #2b2b2a;
+
+    padding-bottom: 5px;
+  }
+
+  .accordion-button,
+  .accordion-body {
+    padding-left: 8px;
+  }
+
+  .accordion-body {
+    padding-top: 5px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.fag-content {
+  padding: 6.5rem 0;
+
+  display: flex;
+  gap: 60px;
+
+  h1 {
+    margin-bottom: 0;
+    height: 82px;
+  }
+
+  .fag-form {
+    width: 587px;
+    height: 612px;
+    padding: 35px 50px;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: $blue;
+
+    h2,
+    .fag-footer-form-button {
+      font-family: Uni Sans-Trial, sans-serif;
+      font-weight: 900;
+      line-height: 100%;
+      text-transform: uppercase;
+      font-style: italic;
+
+      color: white;
+    }
+
+    .fag-form-title-content{
+      padding-top: 1.5rem;
+    }
+
+    h2 {
+      font-size: 38px;
+
+      text-align: center;
+    }
+
+    h5,
+    .footer-form-text {
+      font-family: Montserrat, sans-serif;
+
+      text-align: center;
+
+      color: white;
+    }
+
+    h5 {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 100%;
+
+      p:first-child {
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    .footer-form-text {
+      font-size: 16px;
+      font-weight: 400;
+
+      padding-top: 1.5rem;
+    }
+
+    .form-footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      padding-top: 1.5rem;
+
+      line-height: normal;
+
+      .fag-footer-form-button {
+        background-color: white;
+        color: $blue;
+
+        height: 56px;
+
+        padding: 19px 72px;
+
+        border-radius: 0;
+
+        &:hover {
+          color: $blue-hover;
+        }
+      }
+    }
+
+    .row:has( > .form_control) {
+      margin-right: 0;
+      margin-left: 0;
+    }
+
+    .form-content {
+      display: flex;
+      flex-direction: column;
+      gap: 10px
+    }
+
+    .form_control_group {
+      display: flex;
+      gap: 10px;
+
+      &  .form_control{
+        flex: 1;
+      }
+    }
+
+    .form_control {
+      position: relative;
+
+      padding: 19px 20px;
+
+      border-bottom: 1px solid $gray;
+
+      background-color: rgb(#fff, 0.21);
+
+      textarea {
+        resize: none;
+      };
+
+      &:has( > input) {
+        height: 56px;
+      }
+
+      .control-input {
+        width: 100%;
+        border: 0;
+        outline: 0;
+        color: white;
+        padding: 10px 0;
+        background: transparent;
+        transition: border-color 0.2s;
+
+        &::placeholder {
+          color: transparent;
+        }
+
+        &input{
+          background-color: rgb(#fff, 0.21);
+        }
+      }
+
+      .control-input:placeholder-shown ~ .control-label {
+        font-size: 16px;
+        cursor: text;
+        top: 20px;
+      }
+
+      label,
+      .control-input:focus ~ .control-label {
+        position: absolute;
+        top: 4px;
+
+        display: block;
+
+        transition: 0.2s;
+
+        font-size: 12px;
+
+        color: white;
+      }
+    }
+
+    .required::after {
+      content: '*';
+      padding-left: 2px;
+    }
+  }
+}
