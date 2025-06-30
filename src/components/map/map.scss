@@ -1,0 +1,75 @@
+.map-section {
+  min-height: 598px;
+
+  position: relative;
+
+  .map-section-img {
+    background-image:
+            url('../../assets/images/pick/4.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+
+    width: 100%;
+  }
+
+  .container {
+    position: relative;
+    padding-top: 3.5rem;
+  }
+
+  .labels {
+    font-family: Uni Sans-Trial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+    font-size: 42px;
+
+    text-transform: uppercase;
+
+    color: white;
+
+    padding-left: 0;
+
+    div{
+      background-color: $red;
+
+      height: 57px;
+      width: fit-content;
+
+      clip-path: polygon(0 0, 100% 0, calc(100% - 10px) 100%, 0 100%);
+
+      p {
+        margin-bottom: 0;
+        margin-left: 2rem;
+        margin-right: 2rem;
+      }
+
+      &:last-child {
+        background-color: $blue;
+      }
+    }
+  }
+
+  @media screen and (min-width: 1400px) and (max-width: 1829px){
+    .labels {
+      padding-left: var(--bs-gutter-x, 1.5rem) !important;
+      padding-right: var(--bs-gutter-x, 1.5rem) !important;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    .labels {
+      div {
+        height: auto;
+      }
+
+      p {
+        font-size: 28px;
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+</head>
+<body class="order-page">
+<div class="header">
+  @@include('../../components/header/header.html')
+</div>
+
+<div class="container">
+  <div class="row">
+    <div class="order-content">
+      <div class="order-header">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item breadcrumb-after-main"><a href="index.html">Главная</a></li>
+            <li class="breadcrumb-item"><a href="catalog.html">Корзина</a></li>
+            <li class="breadcrumb-item active breadcrumb-after" aria-current="page">Оформить заказ</li>
+          </ol>
+        </nav>
+        <h1>
+          Оформить заказ
+        </h1>
+      </div>
+
+      <div class="order-wrapper">
+        <div class="order-info">
+          <div class="order-contact-row">
+            <h5>Контактные данные</h5>
+            <div class="order-info-contact">
+              <div class="form_control invalid">
+                <input type="text" id="name" class="control-input" placeholder="Имя">
+                <label for="name" class="control-label required">Имя</label>
+              </div>
+              <div class="form_control">
+                <input type="text" id="phone" class="control-input" placeholder="Телефон">
+                <label for="name" class="control-label required">Телефон</label>
+              </div>
+              <div class="form_control">
+                <input type="text" id="email" class="control-input" placeholder="E-mail">
+                <label for="name" class="control-label required">E-mail</label>
+              </div>
+            </div>
+          </div>
+          <div class="delivery-option">
+            <h5>Варианты доставки</h5>
+            <div class="delivery-option-row">
+              <div class="option-row-info">
+                <div class="option-row-info-checkbox">
+                  <input class="form-check-input item-checkbox" type="checkbox" id="item1">
+                  <label for="item1">Самовывоз из ближайшего мазазина</label>
+                </div>
+                <p>
+                  Наличие и стоимость товара в вашем регионе могут отличаться, от указанных на сайте.
+                  После оформления заказа с Вами свяжется менеджер и уточнит все детали.
+                </p>
+              </div>
+
+              <div class="select">
+                <select class="js-choice">
+                  <option value="">Выберите значение</option>
+                </select>
+              </div>
+            </div>
+            <div class="delivery-option-row">
+              <div class="option-row-info">
+                <div class="option-row-info-checkbox">
+                  <input class="form-check-input item-checkbox" type="checkbox" id="item2">
+                  <label for="item2">Доставка курьерской службой СДЭК</label>
+                </div>
+                <p>
+                  После оформления заказа с Вами свяжется менеджер и уточнит все детали и стоимость доставки.
+                  Доставка в отдаленные районы города оговаривается индивидуально.
+                </p>
+              </div>
+
+              <div class="delivery-icon">
+                <svg width="145" height="44">
+                  <use href="./assets/sprite.svg#sdek"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="delivery-option-row">
+              <div class="option-row-info">
+                <div class="option-row-info-checkbox">
+                  <input class="form-check-input item-checkbox" type="checkbox" id="item3">
+                  <label for="item3">Доставка Почтой России</label>
+                </div>
+                <p>
+                  После оформления заказа с Вами свяжется менеджер и уточнит все детали и стоимость доставки.
+                  Доставка в отдаленные районы города оговаривается индивидуально.
+                </p>
+              </div>
+
+              <div class="delivery-icon">
+                <svg width="111" height="69">
+                  <use href="./assets/sprite.svg#post"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="order-price">
+          <h5>Сумма заказа</h5>
+          <div class="price-row">
+            <span>3 товара</span>
+            <span>4000 Р</span>
+          </div>
+          <a class="btn get-button classic-button-text classic-button"
+             href=""
+             type="button">
+            Оформить заказ
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+@@include('../../components/footer/footer.html')
+
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+<script src="./pages/order/order.js"></script>
+
+</body>
+</html>

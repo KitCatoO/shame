@@ -4,7 +4,7 @@ $accordion-button-icon: url("../../assets/images/icons/circle-plus.svg");
 $accordion-button-active-icon: url("../../assets/images/icons/minus.svg");
 
 $accordion-button-active-bg: transparent;
-$bs-accordion-border-color: $dark-gray;
+$bs-accordion-border-color: $dark-grey;
 
 
 .accordion {
@@ -19,7 +19,7 @@ $bs-accordion-border-color: $dark-gray;
     }
 
     &:last-child {
-      border-bottom: 1px solid $dark-gray;
+      border-bottom: 1px solid $dark-grey;
     }
   }
 
@@ -74,7 +74,7 @@ $bs-accordion-border-color: $dark-gray;
 }
 
 .fag-content {
-  padding: 6.5rem 0;
+  padding: 6rem 0;
 
   display: flex;
   gap: 60px;
@@ -191,7 +191,7 @@ $bs-accordion-border-color: $dark-gray;
 
       padding: 19px 20px;
 
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid $grey;
 
       background-color: rgb(#fff, 0.21);
 
@@ -287,6 +287,10 @@ $bs-accordion-border-color: $dark-gray;
     padding: 2rem var(--bs-gutter-x, 1.5rem) 2rem var(--bs-gutter-x, 1.5rem);
 
     display: block;
+
+    &:first-child {
+      margin-bottom: 2rem;
+    }
 
     h1{
       font-size: 32px;

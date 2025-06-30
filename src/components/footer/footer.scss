@@ -6,6 +6,10 @@ footer {
   font-family: Montserrat, sans-serif;
   line-height: 100%;
 
+  .container {
+    padding-top: 1rem;
+  }
+
   .container,
   .row {
     height: inherit;
@@ -32,6 +36,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 40px;
+  }
+
+  .footer-logo {
+    cursor: pointer;
   }
 
   .contact-info {
