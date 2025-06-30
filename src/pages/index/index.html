@@ -6,8 +6,9 @@
   <title>Главная</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="main-page">
 @@include('../../components/header/header.html')
+
 
   <section class="first-section">
     <div class="first-section-img"></div>
@@ -25,8 +26,8 @@
               Крупнейшая сеть магазинов спортивного питания, представленная более чем в 50 регионах
             </p>
             <div class="first-section-buttons">
-              <a class="btn btn-catalog" href="#" role="button">каталог продукции</a>
-              <a class="link-catalog" role="button" href="../catalog/catalog.html">
+              <a class="btn btn-catalog classic-button-text classic-button" href="catalog.html" role="button">каталог продукции</a>
+              <a class="link-catalog classic-button-text" role="button" href="catalog.html">
                 Где приобрести продукцию
                 <svg width="20" height="20">
                   <use href="./assets/sprite.svg#arrow-circle"></use>
@@ -70,7 +71,7 @@
     </div>
   </section>
 
-  <section class="second-section">
+  <section class="second-section section-light">
     <div class="container">
       <div class="row">
         <div class="second-section-wrapper">
@@ -102,7 +103,7 @@
           </ul>
 
           <div class="tab-content" id="pills-tabContent">
-            <div class="tab-panel fade show active"
+            <div class="tab-pane fade show active"
                  id="content-one"
                  role="tabpanel"
                  aria-labelledby="tab-one">
@@ -163,7 +164,7 @@
                 </div>
               </div>
             </div>
-            <div class="tab-panel fade"
+            <div class="tab-pane fade"
                  id="content-two"
                  role="tabpanel"
                  aria-labelledby="tab-two">
@@ -226,12 +227,13 @@
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
   </section>
 
-  <section class="third-section">
+  <section class="third-section section-light">
     <div class="container">
       <div class="row">
         <div class="third-section-content">
@@ -243,119 +245,127 @@
           </h1>
           <div class="catalog-row-wrapper">
             <div class="catalog-item">
-              <img src="../../assets/images/pick/catalog/1.png">
+              <a href="product.html">
+                <img src="../../assets/images/pick/catalog/1.png">
 
-              <div class="catalog-item-content">
-                <div class="catalog-item-title">
-                  <p>Creatine premium 100%</p>
-                </div>
-                <div class="catalog-item-size">
-                  <p>Фасовка:</p>
-                  <div class="item-size-list">
-                    <p class="active">250 г</p>
-                    <p>400 г</p>
+                <div class="catalog-item-content">
+                  <div class="catalog-item-title">
+                    <p>Creatine premium 100%</p>
+                  </div>
+                  <div class="catalog-item-size">
+                    <p>Фасовка:</p>
+                    <div class="item-size-list">
+                      <p class="active">250 г</p>
+                      <p>400 г</p>
+                    </div>
+                  </div>
+                  <div class="catalog-item-taste">
+                    <p>Вкус:</p>
+                    <div class="item-taste-list">
+                      <p class="active">Банан</p>
+                      <p>Клубника</p>
+                      <p>Черника</p>
+                      <p>Шоколад</p>
+                    </div>
                   </div>
                 </div>
-                <div class="catalog-item-taste">
-                  <p>Вкус:</p>
-                  <div class="item-taste-list">
-                    <p class="active">Банан</p>
-                    <p>Клубника</p>
-                    <p>Черника</p>
-                    <p>Шоколад</p>
-                  </div>
-                </div>
-              </div>
+              </a>
               <div class="catalog-item-footer">
                 <p>1 020 Р</p>
-                <button type="button" class="btn">В корзину</button>
+                <button type="button" class="btn classic-button">В корзину</button>
               </div>
             </div>
             <div class="catalog-item">
-              <img src="../../assets/images/pick/catalog/1.png">
+              <a href="product.html">
+                <img src="../../assets/images/pick/catalog/1.png">
 
-              <div class="catalog-item-content">
-                <div class="catalog-item-title">
-                  <p>Creatine premium 100%</p>
-                </div>
-                <div class="catalog-item-size">
-                  <p>Фасовка:</p>
-                  <div class="item-size-list">
-                    <p class="active">250 г</p>
-                    <p>400 г</p>
+                <div class="catalog-item-content">
+                  <div class="catalog-item-title">
+                    <p>Creatine premium 100%</p>
+                  </div>
+                  <div class="catalog-item-size">
+                    <p>Фасовка:</p>
+                    <div class="item-size-list">
+                      <p class="active">250 г</p>
+                      <p>400 г</p>
+                    </div>
+                  </div>
+                  <div class="catalog-item-taste">
+                    <p>Вкус:</p>
+                    <div class="item-taste-list">
+                      <p>Банан</p>
+                      <p class="active">Клубника</p>
+                      <p>Черника</p>
+                      <p>Шоколад</p>
+                    </div>
                   </div>
                 </div>
-                <div class="catalog-item-taste">
-                  <p>Вкус:</p>
-                  <div class="item-taste-list">
-                    <p>Банан</p>
-                    <p class="active">Клубника</p>
-                    <p>Черника</p>
-                    <p>Шоколад</p>
-                  </div>
-                </div>
-              </div>
+              </a>
               <div class="catalog-item-footer">
                 <p>1 020 Р</p>
-                <button type="button" class="btn">В корзину</button>
+                <button type="button" class="btn classic-button">В корзину</button>
               </div>
             </div>
             <div class="catalog-item">
-              <img src="../../assets/images/pick/catalog/1.png">
+              <a href="product.html">
+                <img src="../../assets/images/pick/catalog/1.png">
 
-              <div class="catalog-item-content">
-                <div class="catalog-item-title">
-                  <p>Creatine premium 100%</p>
-                </div>
-                <div class="catalog-item-size">
-                  <p>Фасовка:</p>
-                  <div class="item-size-list">
-                    <p>250 г</p>
-                    <p class="active">400 г</p>
+                <div class="catalog-item-content">
+                  <div class="catalog-item-title">
+                    <p>Creatine premium 100%</p>
+                  </div>
+                  <div class="catalog-item-size">
+                    <p>Фасовка:</p>
+                    <div class="item-size-list">
+                      <p>250 г</p>
+                      <p class="active">400 г</p>
+                    </div>
+                  </div>
+                  <div class="catalog-item-taste">
+                    <p>Вкус:</p>
+                    <div class="item-taste-list">
+                      <p>Банан</p>
+                      <p>Клубника</p>
+                      <p>Черника</p>
+                      <p class="active">Шоколад</p>
+                    </div>
                   </div>
                 </div>
-                <div class="catalog-item-taste">
-                  <p>Вкус:</p>
-                  <div class="item-taste-list">
-                    <p>Банан</p>
-                    <p>Клубника</p>
-                    <p>Черника</p>
-                    <p class="active">Шоколад</p>
-                  </div>
-                </div>
-              </div>
+              </a>
               <div class="catalog-item-footer">
                 <p>1 020 Р</p>
-                <button type="button" class="btn">В корзину</button>
+                <button type="button" class="btn classic-button">В корзину</button>
               </div>
             </div>
             <div class="catalog-item">
-              <img src="../../assets/images/pick/catalog/1.png">
+              <a href="product.html">
+                <img src="../../assets/images/pick/catalog/1.png">
 
-              <div class="catalog-item-content">
-                <div class="catalog-item-title">
-                  <p>Creatine premium 100%</p>
-                </div>
-                <div class="catalog-item-size">
-                  <p>Фасовка:</p>
-                  <div class="item-size-list">
-                    <p class="active">250 г</p>
-                    <p>400 г</p>
+                <div class="catalog-item-content">
+                  <div class="catalog-item-title">
+                    <p>Creatine premium 100%</p>
+                  </div>
+                  <div class="catalog-item-size">
+                    <p>Фасовка:</p>
+                    <div class="item-size-list">
+                      <p class="active">250 г</p>
+                      <p>400 г</p>
+                    </div>
+                  </div>
+                  <div class="catalog-item-taste">
+                    <p>Вкус:</p>
+                    <div class="item-taste-list">
+                      <p class="active">Банан</p>
+                      <p>Клубника</p>
+                      <p>Черника</p>
+                      <p>Шоколад</p>
+                    </div>
                   </div>
                 </div>
-                <div class="catalog-item-taste">
-                  <p>Вкус:</p>
-                  <div class="item-taste-list">
-                    <p class="active">Банан</p>
-                    <p>Клубника</p>
-                    <p>Черника</p>
-                    <p>Шоколад</p>
-                  </div>
-                </div>
-              </div>
+              </a>
               <div class="catalog-item-footer">
                 <p>1 020 Р</p>
-                <button type="button" class="btn">В корзину</button>
+                <button type="button" class="btn classic-button">В корзину</button>
               </div>
             </div>
           </div>
@@ -364,36 +374,13 @@
     </div>
   </section>
 
-  @@include('../../components/fag/fag.html')
+  @@include('../../components/faq/faq.html')
 
-  <section class="forth-section">
-    <div class="forth-section-img"></div>
-    <div class="container">
-      <div class="row">
-        <div class="labels">
-          <div>
-            <p>
-              ГЕОГРАФИЯ
-            </p>
-          </div>
-          <div>
-            <p>
-              ПРЕДСТАВЛЕНИЯ БРЕНДА
-            </p>
-          </div>
-          <div>
-            <p>
-              FITNESS FORMULA
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+<div class="forth-section section-light">
+  @@include('../../components/map/map.html')
+</div>
 
   @@include('../../components/footer/footer.html')
   <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="./js/components/header/header.js"></script>
 </body>
 </html>

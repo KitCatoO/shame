@@ -4,7 +4,7 @@ $accordion-button-icon: url("../../assets/images/icons/circle-plus.svg");
 $accordion-button-active-icon: url("../../assets/images/icons/minus.svg");
 
 $accordion-button-active-bg: transparent;
-$bs-accordion-border-color: $dark-gray;
+$bs-accordion-border-color: $dark-grey;
 
 
 .accordion {
@@ -19,7 +19,18 @@ $bs-accordion-border-color: $dark-gray;
     }
 
     &:last-child {
-      border-bottom: 1px solid $dark-gray;
+      border-bottom: 1px solid $dark-grey;
+    }
+
+    .accordion-button:after {
+      filter: brightness(1);
+      transition: filter 0.3s ease;
+    }
+
+    .accordion-button:hover {
+      &:after {
+        filter: brightness(0.8);
+      }
     }
   }
 
@@ -73,8 +84,8 @@ $bs-accordion-border-color: $dark-gray;
   }
 }
 
-.fag-content {
-  padding: 6.5rem 0;
+.faq-content {
+  padding: 6rem 0;
 
   display: flex;
   gap: 60px;
@@ -84,7 +95,7 @@ $bs-accordion-border-color: $dark-gray;
     height: 82px;
   }
 
-  .fag-form {
+  .faq-form {
     width: 587px;
     height: 612px;
     padding: 35px 50px;
@@ -95,7 +106,7 @@ $bs-accordion-border-color: $dark-gray;
     background-color: $blue;
 
     h2,
-    .fag-footer-form-button {
+    .faq-footer-form-button {
       font-family: Uni Sans-Trial, sans-serif;
       font-weight: 900;
       line-height: 100%;
@@ -105,12 +116,14 @@ $bs-accordion-border-color: $dark-gray;
       color: white;
     }
 
-    .fag-form-title-content{
+    .faq-form-title-content{
       padding-top: 1.5rem;
     }
 
     h2 {
       font-size: 38px;
+
+      margin-bottom: 16px;
 
       text-align: center;
     }
@@ -146,11 +159,11 @@ $bs-accordion-border-color: $dark-gray;
       flex-direction: column;
       align-items: center;
 
-      padding-top: 1.5rem;
+      padding-top: 1rem;
 
       line-height: normal;
 
-      .fag-footer-form-button {
+      .faq-footer-form-button {
         background-color: white;
         color: $blue;
 
@@ -174,7 +187,7 @@ $bs-accordion-border-color: $dark-gray;
     .form-content {
       display: flex;
       flex-direction: column;
-      gap: 10px
+      gap: 10px;
     }
 
     .form_control_group {
@@ -189,9 +202,7 @@ $bs-accordion-border-color: $dark-gray;
     .form_control {
       position: relative;
 
-      padding: 19px 20px;
-
-      border-bottom: 1px solid $gray;
+      border-bottom: 1px solid $grey;
 
       background-color: rgb(#fff, 0.21);
 
@@ -205,10 +216,11 @@ $bs-accordion-border-color: $dark-gray;
 
       .control-input {
         width: 100%;
+        height: 100%;
         border: 0;
         outline: 0;
         color: white;
-        padding: 10px 0;
+        padding: 12px 10px 4px;
         background: transparent;
         transition: border-color 0.2s;
 
@@ -224,13 +236,14 @@ $bs-accordion-border-color: $dark-gray;
       .control-input:placeholder-shown ~ .control-label {
         font-size: 16px;
         cursor: text;
-        top: 20px;
+        top: 16px;
       }
 
       label,
       .control-input:focus ~ .control-label {
         position: absolute;
-        top: 4px;
+        top: 2px;
+        left: 12px;
 
         display: block;
 
@@ -239,6 +252,10 @@ $bs-accordion-border-color: $dark-gray;
         font-size: 12px;
 
         color: white;
+      }
+
+      .control-input:focus {
+        padding-top: 20px;
       }
     }
 
@@ -250,57 +267,63 @@ $bs-accordion-border-color: $dark-gray;
 }
 
 @media screen and (min-width: 1400px) and (max-width: 1829px) {
-  .fag-content {
+  .faq-content {
     padding: 4rem var(--bs-gutter-x, 1.5rem) 4rem var(--bs-gutter-x, 1.5rem);
   }
 }
 
 @media screen and (min-width: 1200px) and (max-width: 1399px) {
-  .fag-content {
-    padding: 4rem 0;
+  .faq-content {
+    padding-left: var(--bs-gutter-x, 1.5rem);
+    padding-right: var(--bs-gutter-x, 1.5rem);
+
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .fag-form {
+  .faq-form {
     width: auto;
     height: auto;
   }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .fag-content {
+  .faq-content {
     padding: 4rem 0;
 
     flex-wrap: wrap;
     justify-content: center;
   }
 
-  .fag-form {
+  .faq-form {
     width: auto !important;
     height: auto !important;
   }
 }
 
 @media only screen and (max-width: 767px) {
-  .fag-content {
+  .faq-content {
     padding: 2rem var(--bs-gutter-x, 1.5rem) 2rem var(--bs-gutter-x, 1.5rem);
 
     display: block;
+
+    &:first-child {
+      margin-bottom: 2rem;
+    }
 
     h1{
       font-size: 32px;
       height: auto;
     }
 
-    .fag-form{
+    .faq-form{
       width: auto;
       height: auto;
 
       padding: 10px 24px;
     }
 
-    .fag-form-title-content {
+    .faq-form-title-content {
       h2 {
         font-size: 32px;
       }

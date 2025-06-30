@@ -19,8 +19,6 @@ footer {
     padding-left: 0;
     padding-right: 0;
 
-    margin-bottom: 1rem;
-
     height: 56.38px;
 
     display: flex;
@@ -32,6 +30,10 @@ footer {
     display: flex;
     align-items: center;
     gap: 40px;
+  }
+
+  .footer-logo {
+    cursor: pointer;
   }
 
   .contact-info {
@@ -81,6 +83,10 @@ footer {
       justify-content: space-between;
     }
 
+    .footer-logo {
+      top: 1rem;
+    }
+
     .contact-info {
       justify-content: flex-end;
 
@@ -109,6 +115,11 @@ footer {
 
       flex-wrap: wrap;
       justify-content: center;
+    }
+
+    .footer-logo {
+      margin-right: auto;
+      margin-left: auto;
     }
 
     .label-info {

@@ -1,7 +1,8 @@
 $blue: #2873B9;
 $blue-hover:#034685;
-$dark-gray: #9F9F9F;
-$gray: #DCDBDB;
+$dark-grey: #9F9F9F;
+$grey: #DCDBDB;
+$light-grey: #F9F9F9;
 $red: #D62137;
 $red-hover: #991A1C;
 $black: #2B2B2A;
@@ -294,11 +295,167 @@ h1 {
   font-family: Uni Sans-Trial, sans-serif;
 }
 
+a {
+  all: unset;
+}
+
+.breadcrumb {
+  margin-bottom: 0;
+
+  .breadcrumb-item {
+    cursor: pointer;
+
+    &:before, &:after {
+      color: $blue;
+    }
+
+    a {
+      text-decoration: none;
+
+      color: $blue;
+    }
+
+    &.active {
+      a {
+        color: #2b2b2a;
+      }
+
+      & + .breadcrumb-item {
+        padding-left: 1rem;
+      }
+    }
+  }
+}
+
+
+.header {
+  header {
+    .nav-wrapper {
+      label, a, .card-icon-container{
+        color: #2b2b2a;
+      }
+      .burger {
+        &:before, &:after {
+          background-color: #2b2b2a;
+        }
+      }
+    }
+  }
+}
+
+.input-group-with-buttons {
+  display: flex;
+
+  input {
+    font-family: Uni Sans-Trial, sans-serif;
+    font-weight: 900;
+    font-style: italic;
+
+    border: 1px solid $dark-grey;
+    outline: none;
+
+    box-sizing: border-box;
+
+    margin: 0;
+    padding: 10px;
+  }
+
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  input[type='button'] {
+    background-color: transparent;
+
+    min-width: 38px;
+    width: auto;
+    transition: all 300ms ease;
+  }
+
+  .button-minus{
+    border-right: 0;
+  }
+
+  .button-plus {
+    border-left: 0;
+    left: -13px;
+  }
+
+  .button-minus,
+  .button-plus {
+    font-weight: bold;
+    height: 56px;
+    padding: 0;
+
+    font-family: Montserrat, sans-serif !important;
+    color: $dark-grey;
+  }
+
+  .quantity-field {
+    height: 56px;
+    text-align: center;
+    width: 40px;
+    border-right: 0;
+    border-left: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+    -webkit-appearance: none;
+  }
+}
+
+.classic-button {
+  color: white;
+  background-color: $blue;
+
+  &:focus, &:hover {
+    color: white;
+    background-color: $blue-hover;
+  }
+}
+
+.classic-button-text {
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  font-family: Uni Sans-Trial, sans-serif;
+  line-height: 100%;
+}
+
 /** Секция важного медиа запроса */
 @media (min-width: 1400px) {
   .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
     max-width: 1800px;
   }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    .breadcrumb {
+      .breadcrumb-after-main + .breadcrumb-item::before,
+      .breadcrumb-item + .breadcrumb-after.breadcrumb-item::before, {
+        content: none;
+      }
+
+      .breadcrumb-after-main::after,
+      .breadcrumb-item:has(+.breadcrumb-after.breadcrumb-item)::after {
+        content: '/';
+        float: right;
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+
+      .breadcrumb-after {
+        &.breadcrumb-item {
+          padding-left: 0;
+        }
+      }
+    }
 }
 
 /** конец секции важного медиа запроса  */
